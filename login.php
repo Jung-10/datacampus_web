@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
         integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
         integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
     </script>
-    <style>
+    <style type="text/css">
     ul {
         list-style-type: none;
         /* 상단 메뉴바 점 표식 없애기 */
@@ -49,6 +49,7 @@
     /* 상단 메뉴바에 현재 실행중인 페이지를 표시해줌. */
     .active {
         background-color: #009900;
+        
         font-weight: bold;
     }
     </style>
@@ -56,54 +57,33 @@
 
 <body>
     <header>
-
         <ul class="menu-area-main">
             <li> <a href="">BETTER</a> </li>
             <li> <a href="index.html">홈화면</a> </li>
             <!-- 현재 위치한 화면을 카테고리 목록에 표시해준다. -->
             
             <li> <a href="service_wave.html">서비스</a> </li>
-            <li> <a href="login.html">로그인</a> </li>
-            <li class = "active"> <a href="signup.html">회원가입</a></li>
-        </ul>
-
+            <li class = "active"> <a href="login.html">로그인</a> </li>
+            <li> <a href="signup.html">회원가입</a></li>
+          </ul>
     </header>
-    <form action="signupProcess.php" method="POST" id="signup-form">
+    <form method="POST" action="login_check.php">
         <div class="w-50 ml-auto mr-auto mt-5">
             <div class="mb-3 ">
-                <label for="email" class="form-label">아이디</label>
-                <input type="email" name="id" class="form-control" id="id" placeholder="아이디를 입력해 주세요.">
+                <label for="exampleFormControlInput1" class="form-label">아이디</label>
+                <input name="id" type="text" class="form-control" id="exampleFormControlInput1" placeholder="id">
             </div>
             <div class="mb-3 ">
-                <label for="password" class="form-label">비밀번호</label>
-                <input name="password" type="password" class="form-control" id="password" placeholder="비밀번호를 입력해 주세요.">
-            </div>
-            <div class="mb-3 ">
-                <label for="passwordCheck" class="form-label">비밀번호 체크</label>
-                <input type="password" class="form-control" id="password-check" placeholder="비밀번호를 입력해 주세요.">
-            </div>
-            <div class="mb-3 ">
-                <label for="name" class="form-label">이름</label>
-                <input name="name" type="text" class="form-control" id="form-control" placeholder="이름을 입력해 주세요.">
+                <label for="exampleFormControlInput1" class="form-label">비밀번호</label>
+                <input name="password" type="password" class="form-control" id="exampleFormControlInput1"
+                    placeholder="password">
             </div>
 
-            <button type="button" id="signup-button" class="btn btn-primary mb-3">회원가입</button>
+            <button type="submit" class="btn btn-primary mb-3">로그인</button>
+
+    
         </div>
     </form>
-    <script>
-    const signupForm = document.querySelector("#signup-form");
-    const signupButton = document.querySelector("#signup-button");
-    const password = document.querySelector("#password");
-    const passwordCheck = document.querySelector("#password-check");
-    signupButton.addEventListener("click", function(e) {
-        if (password.value && password.value === passwordCheck.value) {
-
-            signupForm.submit();
-        } else {
-            alert("비밀번호가 서로 일치하지 않습니다");
-        }
-    }); //비밀번호와 비밀번호 체크 일치 불일치 여부 확인
-    </script>
 </body>
 
 </html>
