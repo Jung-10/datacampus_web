@@ -1,0 +1,331 @@
+<html>
+    <body>
+        <header>
+          <meta charset="utf-8">
+          <title>청각장애인을 위한 발음 교정 서비스</title>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
+    </script>
+          <style type="text/css">
+            ul {
+                list-style-type: none; /* 상단 메뉴바 점 표식 없애기 */
+                background-color: #73A9AD; /* 상단 메뉴바 배경색 */
+            }
+
+            h5{
+                list-style-type: none;
+                display: block; 
+                color: white; /* 상단 메뉴바 글씨색 */
+                text-align: center; /* 상단 메뉴바 글씨 위치 */
+                padding: 14px 16px; /* 상단 메뉴바 너비 */
+                text-decoration: none;
+            }
+
+            ul:after{
+                content:'';
+                display: block;
+                clear:both;
+            }
+            li {
+                float: left; /* 상단 메뉴바 왼쪽 정렬 */
+            }
+            li a {
+                display: block; 
+                color: white; /* 상단 메뉴바 글씨색 */
+                text-align: center; /* 상단 메뉴바 글씨 위치 */
+                padding: 14px 16px; /* 상단 메뉴바 너비 */
+                text-decoration: none; /* 상단 메뉴바에 페이지 아래 밑줄을 없애줌. */
+            }
+            /* 상단 메뉴바에 사용자가 이동하고 싶은 페이지에 마우스를 올렸을 때 */
+            li a:hover:not(.active) {
+                background-color: #3e91b5;
+            }
+            /* 상단 메뉴바에 현재 실행중인 페이지를 표시해줌. */
+            .active { 
+                background-color: #009900;
+                font-weight: bold;  
+            }
+            h1 {
+                
+                text-align: center;
+                border: solid 1px gray;
+            }
+            h3 {
+                text-align: center;
+                border: solid 1px gray;
+            }
+
+            div {
+                border: 1px solid #333333;
+            }
+
+            div.pa {
+                /*context 크기 너비 설정*/
+                padding: 20px 20px 20px 20px;
+                width: 800px;
+            }
+            
+            </style>
+
+            
+
+            <nav class="main-menu ">
+              
+                <ul class="menu-area-main">
+                    <li> <a href="">BETTER</a> </li>
+                    <li> <a href="index.html">홈화면</a> </li>
+                    <!-- 현재 위치한 화면을 카테고리 목록에 표시해준다. -->
+                    
+                    <li class = "active"> <a href="service.html">서비스</a> </li>
+                    <li> <a href="login.html">로그인</a> </li>
+                    <li> <a href="signup.html">회원가입</a></li>
+                  </ul>
+            </nav>
+        </header>
+        <h1>CONTEXT</h1>
+        <!-- <img src="책.png" width="500" style="margin-left: auto; margin-right: auto; display: block;"> -->
+        <!-- <h3>목적 : 청각 장애인의 효과적인 영어 발음 개선 </h3> -->
+
+        
+        <html>
+            <head>
+                <!-- <style type="text/css">
+                .my-box { border:1px solid; padding:10px; }
+                </style> -->
+            </head>
+
+            <body>
+            
+                <!-- <h1>Context</h1> -->
+
+                <center> <div class="pa">
+                    <p>I showed my masterpiece to the grown-ups, and asked them whether the
+                    drawing frightened them.
+                    But they answered: "Frighten? Why should any one be frightened by a hat?"
+                    My drawing was not a picture of a hat. 
+                    It was a picture of a boa constrictor
+                    digesting an elephant. But since the grown-ups were not able to understand it, I
+                    made another drawing: I drew the inside of a boa constrictor, so that the
+                    grown-ups could see it clearly. They always need to have things explained.</p>
+                </div>
+                </center>
+
+
+
+            </body>
+        </html>
+        
+        <html>
+            <body>
+                
+                <p>
+                    <div class="balloon left">
+                        <span>What did Fritz find when he was snooping in the basement?
+                        </span>
+                    </div>
+                    </p>
+            
+                    
+                    <p>
+                    <div class="balloon right" style = "float : right">
+                        <span>It's _____________.
+                        </span>
+                    </div>
+                    </p>
+
+                    
+            
+                    <style type="text/css">
+            
+                .balloon {
+                    position: relative;
+                    display: inline-block;
+                }
+             
+                .balloon span {
+                    display: inline-block;
+                    padding: 10px;
+                    color: #fff;
+                    background: #b3a9ad;
+                    border-radius: 20px;
+                }
+             
+                .balloon:after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                }
+             
+                .balloon.right:after, .balloon.left:after {
+                    border-width: 10px 15px;
+                    top: 50%;
+                    margin-top: -10px;
+                    
+                }
+             
+                .balloon.top:after, .balloon.bottom:after {
+                    border-width: 15px 10px;
+                    left: 50%;
+                    margin-left: 10px;
+                }
+             
+                .balloon.top:after {
+                    border-color: #b3a9ad transparent transparent transparent;
+                    bottom: -25px;
+                }
+             
+                .balloon.bottom:after {
+                    border-color: transparent transparent #b3a9ad transparent;
+                    top: -25px;
+                }
+             
+                .balloon.left:after {
+                    border-color: transparent #b3a9ad transparent transparent;
+                    left: -25px;
+                }
+             
+                .balloon.right:after {
+                    border-color: transparent transparent transparent #b3a9ad;
+                    right: -25px;
+                }
+                
+                    
+
+                    </style>
+            </body>
+            
+
+            
+
+        </html>
+          
+
+        <!-- 마이크 녹음 부분 -->
+        <body>
+            <input type=checkbox id="chk-hear-mic" ><label for="chk-hear-mic">마이크 소리 듣기</label>
+            <button id="record">녹음</button>
+            <button id="stop">정지</button>
+            <div id="sound-clips"></div>
+
+            <h5><li class = "active"> <a href="service_feedback.html">피드백</a> </li></h5>
+            
+            
+            <!-- <img src="wave_test.jpg" width="700" height ="200"> -->
+            <script>
+                const record = document.getElementById("record")
+                const stop = document.getElementById("stop")
+                const soundClips = document.getElementById("sound-clips")
+                const chkHearMic = document.getElementById("chk-hear-mic")
+        
+                const audioCtx = new(window.AudioContext || window.webkitAudioContext)() // 오디오 컨텍스트 정의
+        
+                const analyser = audioCtx.createAnalyser()
+                //        const distortion = audioCtx.createWaveShaper()
+                //        const gainNode = audioCtx.createGain()
+                //        const biquadFilter = audioCtx.createBiquadFilter()
+        
+                function makeSound(stream) {
+                    const source = audioCtx.createMediaStreamSource(stream)
+        
+                    source.connect(analyser)
+                    //            analyser.connect(distortion)
+                    //            distortion.connect(biquadFilter)
+                    //            biquadFilter.connect(gainNode)
+                    //            gainNode.connect(audioCtx.destination) // connecting the different audio graph nodes together
+                    analyser.connect(audioCtx.destination)
+        
+                }
+        
+                if (navigator.mediaDevices) {
+                    console.log('getUserMedia supported.')
+        
+                    const constraints = {
+                        audio: true
+                    }
+                    let chunks = []
+        
+                    navigator.mediaDevices.getUserMedia(constraints)
+                        .then(stream => {
+        
+                            const mediaRecorder = new MediaRecorder(stream)
+                            
+                            chkHearMic.onchange = e => {
+                                if(e.target.checked == true) {
+                                    audioCtx.resume()
+                                    makeSound(stream)
+                                } else {
+                                    audioCtx.suspend()
+                                }
+                            }
+                            
+                            record.onclick = () => {
+                                mediaRecorder.start()
+                                console.log(mediaRecorder.state)
+                                console.log("recorder started")
+                                record.style.background = "red"
+                                record.style.color = "black"
+                            }
+        
+                            stop.onclick = () => {
+                                mediaRecorder.stop()
+                                console.log(mediaRecorder.state)
+                                console.log("recorder stopped")
+                                record.style.background = ""
+                                record.style.color = ""
+                            }
+        
+                            mediaRecorder.onstop = e => {
+                                console.log("data available after MediaRecorder.stop() called.")
+        
+                                const clipName = prompt("오디오 파일 제목을 입력하세요.", new Date())
+        
+                                const clipContainer = document.createElement('article')
+                                const clipLabel = document.createElement('p')
+                                const audio = document.createElement('audio')
+                                const deleteButton = document.createElement('button')
+        
+                                clipContainer.classList.add('clip')
+                                audio.setAttribute('controls', '')
+                                deleteButton.innerHTML = "삭제"
+                                clipLabel.innerHTML = clipName
+        
+                                clipContainer.appendChild(audio)
+                                clipContainer.appendChild(clipLabel)
+                                clipContainer.appendChild(deleteButton)
+                                soundClips.appendChild(clipContainer)
+        
+                                audio.controls = true
+                                const blob = new Blob(chunks, {
+                                    'type': 'audio/ogg codecs=opus'
+                                })
+                                chunks = []
+                                const audioURL = URL.createObjectURL(blob)
+                                audio.src = audioURL
+                                console.log("recorder stopped")
+        
+                                deleteButton.onclick = e => {
+                                    evtTgt = e.target
+                                    evtTgt.parentNode.parentNode.removeChild(evtTgt.parentNode)
+                                }
+                            }
+        
+                            mediaRecorder.ondataavailable = e => {
+                                chunks.push(e.data)
+                            }
+                        })
+                        .catch(err => {
+                            console.log('The following error occurred: ' + err)
+                        })
+                }
+
+                
+            </script>
+            
+        </body>
+        
+    </body>
+</html>
