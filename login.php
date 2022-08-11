@@ -62,7 +62,7 @@
             <li> <a href="index.html">홈화면</a> </li>
             <!-- 현재 위치한 화면을 카테고리 목록에 표시해준다. -->
             
-            <li> <a href="service_wave.html">서비스</a> </li>
+            <li> <a href="service.html">서비스</a> </li>
             <li class = "active"> <a href="login.html">로그인</a> </li>
             <li> <a href="signup.html">회원가입</a></li>
           </ul>
